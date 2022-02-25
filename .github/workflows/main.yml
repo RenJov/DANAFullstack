@@ -1,0 +1,13 @@
+name: Senggol CI
+
+on:
+  push:
+    branches: [ deploy ]
+  # pull_request:
+
+jobs:
+  build-image-add-deploy-in-docker-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v2
